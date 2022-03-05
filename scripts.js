@@ -4,7 +4,7 @@ console.log("hello world.")
 var person = {
   name: "Ro-Bot",
   speak: function() {
-    console.log(`My name is ${person.name}, at your service.`)
+    console.log(`My name is ${this.name}, at your service.`)
   }
 }
 person.speak()
@@ -37,4 +37,4 @@ for (let i = 0; i < 5; i++) {
 const number = 3 // type of number
 const greet = "Hello there!" // type of string
 const isFoodReady = true // type of boolean
-const iAmNotAssignedyet // type of undefined
+let iAmNotAssignedyet // type of undefined
